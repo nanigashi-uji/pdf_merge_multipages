@@ -4,13 +4,23 @@ PDFファイルの複数ページを余白なしで1ページにまとめるレ�
 
 ## 動作要件
 
-  - Python: 2.7で動作確認
-  - PyPDF2: https://pythonhosted.org/PyPDF2/
-    - version 1.26.0 で動作確認
+  1. pdf_merge_multipages3.py
+    - Python: 3.11 で動作確認
+    - pypdf: https://pypi.org/project/pypdf/
+      - version 3.16.2  で動作確認
+
+  2. pdf_merge_multipages.py
+    - Python: 2.7で動作確認
+    - PyPDF2: https://pythonhosted.org/PyPDF2/
+      - version 1.26.0 で動作確認
 
 ## 使い方
 
 ```
+usage: pdf_merge_multipages3.py [-h] [-output filename] [-columns n_h] [-lines n_v] [-page-order opt]
+                                [-rotation opt] [-valign opt] [-align opt] [-metainfo opt] [-title text]
+                                input-file [input-file ...]
+
 usage: pdf_merge_multipages.py [-h] [-output filename] [-columns n_h] [-lines n_v] [-page-order opt]
                                [-rotation opt] [-valign opt] [-align opt] [-metainfo opt] [-title text]
                                input-file [input-file ...]

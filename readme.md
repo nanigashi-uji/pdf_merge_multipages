@@ -4,13 +4,23 @@ Script for layout change of PDF file by merging multiple pages into single page 
 
 ## Requirement
 
-  - Python: tested with version 2.7
-  - PyPDF2: https://pythonhosted.org/PyPDF2/
-    - Tested with version 1.26.0 
+  1. pdf_merge_multipages3.py
+    - Python: tested with version 3.11
+    - pypdf: https://pypi.org/project/pypdf/
+      - Tested with version 3.16.2 
+
+  2. pdf_merge_multipages.py
+    - Python: tested with version 2.7
+    - PyPDF2: https://pythonhosted.org/PyPDF2/
+      - Tested with version 1.26.0 
 
 ## Usage
 
 ```
+usage: pdf_merge_multipages3.py [-h] [-output filename] [-columns n_h] [-lines n_v] [-page-order opt]
+                                [-rotation opt] [-valign opt] [-align opt] [-metainfo opt] [-title text]
+                                input-file [input-file ...]
+
 usage: pdf_merge_multipages.py [-h] [-output filename] [-columns n_h] [-lines n_v] [-page-order opt]
                                [-rotation opt] [-valign opt] [-align opt] [-metainfo opt] [-title text]
                                input-file [input-file ...]
